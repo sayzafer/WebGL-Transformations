@@ -96,6 +96,10 @@ window.onload = function init() {
 		translationArray = [0, 0, 0, 0];
         rotationArray = [0, 0, 0];
         scalerArray = [1, 1];
+
+        var el = document.querySelectorAll(".slider")
+        el.forEach(i => i.value = 0)
+
         requestAnimFrame(render)
     });	
    
